@@ -1,6 +1,6 @@
 <h2>Add a Notice</h2> 
 
-<form name="ilmoituksetform" action="addNotice.php" method="post">
+<form name="addNoticeForm" action="addNotice.php" method="post">
 Title:<br />
 <input type="text" maxlength="80" name="title" id="title" /><br />
 Notice:<br />
