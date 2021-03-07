@@ -1,0 +1,13 @@
+create a HTPASSWD file
+
+.htaccess directory protection:
+
+This in your .htaccess
+
+AuthUserFile /path/to/your/passwdfile
+AuthGroupFile /dev/null
+AuthType Basic
+AuthName "Admin section"
+<Limit GET>
+require valid-user
+</limit>
