@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-family: Prompt, Verdana, Arial, sans-serif;
+	background: url("../img/bg.png") no-repeat center fixed;
+	background-size: cover;
+	background-color: #4B0082;
+}
+
+#nav {
+	max-width: 1100px;
+	height: 60px;
+	margin: auto;
+}
+
+#nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+  float: left;
+  width: 20%;
+  display: block;
+  background-color: #7100d0;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  height: 60px;
+  transition: background 0.5s;
+}
+
+#nav a {
+	border: none;
+	outline: none;
+	text-decoration: none;
+	color: #d8d8d8;
+	font-size: 17px;
+	width: 100%;
+	display: block;
+	height: 40px;
+	padding-top: 20px;
+}
+
+#nav li:hover {
+  background-color: #ff5ea4;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: background 0.5s;
+}
+
+.burger-icon {
+	display: none;
+}
+
+#nav img {
+		width: 25px;
+		border: none;
+		outline: none;
+	}
+
+#container {
+	max-width: 1000px;
+	min-height: 600px;
+	margin: auto;
+}
+
+#main-title {
+	margin-top: 100px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #f1f1f1;
+}
+
+#main-title h1 {
+	text-decoration: none;
+	color: #f1f1f1;
+	font-size: 50px;
+	text-align: center;
+}
+
+#main-title p {
+	text-decoration: none;
+	color: #d8d8d8;
+	font-size: 20px;
+	text-align: center;
+}
+
+#horoscopes {
+	display: grid;
+	grid-template-columns:repeat(6,1fr);
+	grid-gap: 10px;
+	color: #fff;
+	margin-top: 150px;
+}
+
+.horoscopes {
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 3px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	color: #f1f1f1;
+	text-align: center;
+	transition: background 0.5s;
+}
+
+.horoscopes:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: background 0.5s;
+}
+
+.horoscopes a {
+	text-decoration: none;
+	color: #f1f1f1;
+	outline: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	 padding-top: 40px;
+}
+
+.horoscopes p {
+	color: #f1f1f1;
+	margin: 0;
+	padding: 0;
+	padding: 5px;
+	font-size: 13px;
+}
+
+#main-content {
+	margin-top: 150px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 3px solid;
+	border-color: rgba(255, 255, 255, 0.1);
+	min-height: 400px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+#main-content h2 {
+	color: #f1f1f1;
+	margin-top: 25px;
+}
+
+#main-content p {
+	color: #d8d8d8;
+	margin-top: 10px;
+}
+
+#main-content a {
+	color: #00008b;
+	margin-top: 10px;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#footer {
+	height: 30px;
+	padding: 5px;
+	text-align: right;
+}
+
+#footer p {
+	color: #ccc;
+	font-size: 12px;
+}
+
+#footer img {
+	width: 20px;
+	border: none;
+	outline: none;
+	float: left;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 850px){
+	
+	#horoscopes {
+		margin-top: 120px;
+		grid-template-columns:repeat(4,1fr);
+	}
+}
+
+/* PUHELIN */
+
+@media screen and (max-width: 650px){
+	
+	#main-title {
+	margin-top: 30px;
+	}
+	
+	#horoscopes {
+		margin-top: 80px;
+		grid-template-columns:repeat(3,1fr);
+	}
+	
+	#main-content {
+	margin-top: 50px;
+	}
+	
+	#nav ul li {
+		display: block;
+		width: 100%;
+	}
+	
+	.fa-bars {
+		float: right;
+	}
+	
+	#nav img {
+		width: 25px;
+		border: none;
+		outline: none;
+	}
+	
+	.burger-icon {
+		display: inline-block;
+		color: #d8d8d8;
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
+		background-color: rgba(0, 0, 0, 0.4);
+		height: 40px;
+		padding-top: 20px;
+	}
+	
+	.burger-icon:hover {
+		cursor: pointer;
+	}
+	
+	.mobile-show {
+		display: block;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+	
+	.logohide {
+		visibility: none;
+	}
+}
