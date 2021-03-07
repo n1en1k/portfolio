@@ -1,4 +1,5 @@
-<?php session_start(); 
+<?php
+session_start(); 
 
 // If user has already logged in, redirect the user
 if (!isset($_SESSION['appnienik-login'])) { }
