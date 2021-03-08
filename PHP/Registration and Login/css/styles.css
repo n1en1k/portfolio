@@ -48,6 +48,10 @@ input {
 
 textarea {
 	width: 80%;
+	outline: none;
+	border: none;
+	border: 1px solid #333;
+	height: 80px;
 }
 
 #action, #register, #save {
