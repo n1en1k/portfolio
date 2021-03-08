@@ -1,12 +1,3 @@
-create a HTPASSWD file:
-
-htpasswd -c fileName userName
-
-
-.htaccess directory protection:
-
-This in your .htaccess
-
 AuthUserFile /path/to/your/passwdfile
 AuthGroupFile /dev/null
 AuthType Basic
