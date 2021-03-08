@@ -55,4 +55,3 @@ require_once('dbclose.php');
 
 header('location: index.php');
 ?>
-
