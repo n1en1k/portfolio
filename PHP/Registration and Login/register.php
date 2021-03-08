@@ -1,3 +1,10 @@
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+</head>
+<body>
+	<div class="loginScreen">
 <?php
 session_start(); 
 
@@ -49,6 +56,8 @@ require_once('dbclose.php');
 
 ?>
 
-<h2>Success!</h2>
-<p><a href="login.php">Login</a>
-
+		<h2>Success!</h2>
+		<p><a href="login.php">Login</a></p>
+	</div> <!-- loginScreen -->
+</body>
+</html>

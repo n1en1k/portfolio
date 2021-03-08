@@ -1,6 +1,13 @@
-<h2>Notice Board</h2> 
-<!-- Link for users to add their own notice -->
-<p><a style="color: #448a3e;" href="addNoticeForm.php"><b>Add Notice</b></a></p>
+<html>
+<head>
+	<title>Notice Board</title>
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+</head>
+<body>
+	<div class="loginScreen">
+		<h2>Notice Board</h2> 
+		<!-- Link for users to add their own notice -->
+		<p><a style="color: #448a3e;" href="addNoticeForm.php"><b>Add Notice</b></a></p>
 
 <?php
 // Open connection and echo notices
@@ -35,3 +42,6 @@ while ($rivi = mysql_fetch_array ($result)) {
 require_once('dbclose.php');
 
 ?>
+	</div> <!-- loginScreen -->
+</body>
+</html>

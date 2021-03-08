@@ -1,3 +1,11 @@
+<html>
+	<head>
+		<title>Admin Page - Delete</title>
+		<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+	</head>
+	<body>
+		<div class="loginScreen">
+
 <h4>Click the ID number to delete selected notice!</h4>
 
 <?php 
@@ -32,3 +40,6 @@ echo "</table>";
 require_once('dbclose.php');
 
 ?>
+		</div> <!-- loginScreen -->
+	</body>
+</html>

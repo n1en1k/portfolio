@@ -1,3 +1,10 @@
+<html>
+	<head>
+		<title>Admin Page - Alter</title>
+		<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+	</head>
+	<body>
+		<div class="loginScreen">
 <?php
 // Redirect if user has not used the alterSelect.php and selected a row
 if(!isset($_GET['alter'])) { header('location: alterSelect.php'); exit(); }
@@ -35,3 +42,6 @@ while ($row = mysql_fetch_array ($result)) {
 require_once('dbclose.php');
 
 ?>
+		</div> <!-- loginScreen -->
+	</body>
+</html>

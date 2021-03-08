@@ -1,3 +1,10 @@
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+</head>
+<body>
+	<div class="loginScreen">
 <?php
 session_start(); 
 
@@ -48,19 +55,21 @@ require_once('dbopen.php');
 if ($errmsg != '')echo $errmsg; 
 ?>
 
-<h1>Login</h1>
+		<h1>Login</h1>
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
-	<b>Email:</b>
-	<br />
-	<inputtype="text" name="email" />
-	<br />
-	<b>Password:</b>
-	<br />
-	<input type="password" name="passwd" />
-	<br />
-	<input type='submit' name='action' value='Login' />
-	<br />
-	<br />
-	<b>Or </b><a href="rekisteroimislomake.php"><b>Register</b></a></td> 
-</form>
+		<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>"> 
+			<p><label for="email">Email:</label></p>
+
+			<input type="text" name="email" id="email" />
+
+			<p><label for="passwd">Password:</label></p>
+
+			<input type="password" name="passwd" id="passwd" />
+
+			<input type='submit' id='action' name='action' value='Login' />
+
+			<p>Or <a href="registerForm.php"><b>Register</b></a></p> 
+		</form>
+	</div> <!-- loginScreen -->
+</body>
+</html>
