@@ -18,7 +18,7 @@ $result= mysql_query($query)
 	<td style='border-bottom: 1px solid #000;'><b>TIMESTAMP</b></td>
 	
 	</tr>";
-// Käydään rivejä niin kauan kuin niitä riittää
+
 while ($row = mysql_fetch_array ($result)) {
    echo 
    "<tr><td><a style='color: #FF0000;' href='alterForm.php?alter={$row['id']}'>{$row['id']}</a></td>" .

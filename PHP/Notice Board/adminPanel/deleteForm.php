@@ -18,7 +18,6 @@ echo "<table><tr>
 
 </tr>";
 
-// Käydään rivejä niin kauan kuin niitä riittää
 while ($row = mysql_fetch_array ($result)) {
    echo 
          "<tr><td><a style='color: #FF0000;' href='delete.php?del={$row['id']}'>{$row['id']}</a></td>" .

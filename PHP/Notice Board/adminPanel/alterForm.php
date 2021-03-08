@@ -7,13 +7,11 @@ $mod = $_GET['alter'];
 require_once('config.php');
 require_once('dbopen.php');
 
-//Kysely
+//query
 $query = "SELECT id, title, notice, writer FROM noticeboard WHERE id = '$mod';";
 $result= mysql_query($query)
     or die("Error on conn.: " . mysql_error());
 
-
-// Käydään rivejä niin kauan kuin niitä riittää
 while ($row = mysql_fetch_array ($result)) {
    echo 	 
 	"<form method='post' action='alter.php'>
