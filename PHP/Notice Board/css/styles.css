@@ -46,7 +46,15 @@ input {
 	border: 1px solid #333;
 }
 
-#action, #register {
+textarea {
+	width: 80%;
+	outline: none;
+	border: none;
+	border: 1px solid #333;
+	height: 80px;
+}
+
+#action, #register, #save {
 	margin-top: 20px;
 	background-color: #555;
 	border: 1px solid #333;
