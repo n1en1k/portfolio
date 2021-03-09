@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+<head>
+	<title>contactForm</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="./js/js.js"></script>
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+</head>
+<body>
+	<div class="container">
+        <h1 class="contactTitle">Contact Us</h1>
+		<form action="./cgi-bin/sendForm.php" name="contactForm" onsubmit="return validateForm()" method="post">
+        <p><input type="text" class="inputField" placeholder="name:" name="name" id="name" /></p>
+        <p><input type="tel" class="inputField" placeholder="phone:" name="phone" id="phone" /></p>
+        <p><input type="email" class="inputField" placeholder="email:" name="email" id="email" /></p>
+        <p><textarea class="textareaField" placeholder="message:" name="message" id="message" rows="4" cols="50"></textarea></p>
+        <p><input type="text" class="inputField" placeholder="How many sides does a square have? (e.g. 3)" name="secure" id="secure" /></p> <!-- Secure question to get rid of bots-->
+        <p><input type="submit" class="inputSubmit" name="submit" id ="submit" value="Send" /></p>
+        </form>
+	</div> <!-- container -->
+</body>
+</html>
