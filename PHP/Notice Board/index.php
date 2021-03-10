@@ -20,11 +20,11 @@ $result= mysql_query($query)
     or die("Error on sql.: " . mysql_error());
 
 
-while ($rivi = mysql_fetch_array ($result)) {
-		 $title = $rivi['title'];
-		 $notice = $rivi['notice'];
-		 $writer = $rivi['writer'];
-		 $timest = $rivi['timest'];
+while ($row = mysql_fetch_array ($result)) {
+		 $title = $row['title'];
+		 $notice = $row['notice'];
+		 $writer = $row['writer'];
+		 $timest = $row['timest'];
 		 
 		 $title = htmlspecialchars($title);
 		 
