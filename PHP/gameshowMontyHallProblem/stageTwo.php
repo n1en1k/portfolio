@@ -18,21 +18,21 @@ $opened = $_POST['openedDoor'];
 echo "<table><tr>";
 
 if($prize == 2) {
-echo "<td><img src='donkey.gif' alt='donkey' /></td>
-<td><img src='prize.gif' alt='prize' /></td>
-<td><img src='donkey.gif' alt='donkey' /></td>";
+echo "<td><img src='./images/donkey.gif' alt='donkey' /></td>
+<td><img src='./images/prize.gif' alt='prize' /></td>
+<td><img src='./images/donkey.gif' alt='donkey' /></td>";
 }
 
 elseif($prize == 3) {
-echo "<td><img src='donkey.gif' alt='donkey' /></td>
-<td><img src='donkey.gif' alt='prize' /></td>
-<td><img src='prize.gif' alt='donkey' /></td>";
+echo "<td><img src='./images/donkey.gif' alt='donkey' /></td>
+<td><img src='./images/donkey.gif' alt='prize' /></td>
+<td><img src='./images/prize.gif' alt='donkey' /></td>";
 }
 
 elseif($prize == 1) {
-echo "<td><img src='prize.gif' alt='donkey' /></td>
-<td><img src='donkey.gif' alt='prize' /></td>
-<td><img src='donkey.gif' alt='donkey' /></td>";
+echo "<td><img src='./images/prize.gif' alt='donkey' /></td>
+<td><img src='./images/donkey.gif' alt='prize' /></td>
+<td><img src='./images/donkey.gif' alt='donkey' /></td>";
 }
 
 echo "</tr><tr><td align='center' colspan='3'>";

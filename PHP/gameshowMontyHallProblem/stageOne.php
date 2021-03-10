@@ -41,20 +41,20 @@ echo "<h2>The Host has opened one door for you and it is door number $opened and
 <?php
 
 if($opened == 1) {
-echo "<td><img src='donkey.gif' alt='doorone-open' /></td>
-<td><img src='doortwo.gif' alt='doortwo' /></td>
-<td><img src='doorthree.gif' alt='doorthree' /></td>";
+echo "<td><img src='./images/donkey.gif' alt='doorone-open' /></td>
+<td><img src='./images/doortwo.gif' alt='doortwo' /></td>
+<td><img src='./images/doorthree.gif' alt='doorthree' /></td>";
 }
 
 elseif($opened == 2) {
-echo "<td><img src='doorone.gif' alt='doorone' /></td>
-<td><img src='donkey.gif' alt='doortwo-open' /></td>
-<td><img src='doorthree.gif' alt='doorthree' /></td>";
+echo "<td><img src='./images/doorone.gif' alt='doorone' /></td>
+<td><img src='./images/donkey.gif' alt='doortwo-open' /></td>
+<td><img src='./images/doorthree.gif' alt='doorthree' /></td>";
 }
 elseif($opened == 3) {
-echo "<td><img src='doorone.gif' alt='doorone' /></td>
-<td><img src='doortwo.gif' alt='doortwo' /></td>
-<td><img src='donkey.gif' alt='doorthree-open' /></td>";
+echo "<td><img src='./images/doorone.gif' alt='doorone' /></td>
+<td><img src='./images/doortwo.gif' alt='doortwo' /></td>
+<td><img src='./images/donkey.gif' alt='doorthree-open' /></td>";
 }
 
 
@@ -77,31 +77,5 @@ echo "<input type='hidden' value='$doors' name='doors' />";
 	</tr>
 </form>
 </table>
-
-<?php 
-/* echo "Juontaja avasi sinulle oven nro $opened ja kysyy: haluatko vaihtaa valintasi vai pysyä siinä?";
-echo "<form method='post' action='vaihe2.php'>";
-echo "<input type='radio' name='valinta' value='0' /> Vaihdan!<br />";
-echo "<input type='radio' checked='checked' name='valinta' value='1' /> Pysyn!<br /><br />";
-echo "<input type='submit' value='Päätä' />";
-*/
-
-
-
-/*
-for ($i=0; $i<3; $i ++)
-	{	
-		switch ($doors[$i])
-		{
-			case $opened:
-				break;
-			case $picked:
-				break;
-			default:
-				$switch = $doors[$i];
-		}
-	}
-*/
-?>
 </body>
 </html>
