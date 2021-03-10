@@ -1,16 +1,15 @@
 create a HTPASSWD file:
 
-htpasswd -c fileName userName
+htpasswd -c .htpasswd userName
 
+chmod 644 .htpasswd
 
 .htaccess directory protection:
 
 This in your .htaccess
 
-AuthUserFile /path/to/your/passwdfile
-AuthGroupFile /dev/null
+#Protect Directory
+AuthName "Dialog prompt"
 AuthType Basic
-AuthName "Admin section"
-<Limit GET>
-require valid-user
-</limit>
+AuthUserFile /home/username/example.com/.htpasswd
+Require valid-user
