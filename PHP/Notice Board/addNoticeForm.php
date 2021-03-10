@@ -1,8 +1,10 @@
-<html>
-	<head>
-		<title>Add a Notice</title>
-		<link rel="stylesheet" href="./css/styles.css" type="text/css" />
-	</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+<head>
+	<title>Add Notice</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+</head>
 	<body>
 		<div class="loginScreen">
 			<h2>Notice Board</h2> 
