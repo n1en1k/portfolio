@@ -34,7 +34,7 @@
 				<h1>Astrology as a guide for us</h1>
 				<p>We often wonder how to live and what to do. The stars will tell us the answers!</p>
 			</div> <!-- main-title -->
-			<div id="horoscopes">
+			<!-- <div id="horoscopes">
 				<div class="horoscopes"><a href="./showHoroscope.php?horoscopeName=Aries">Aries</a></div>
 				<div class="horoscopes"><a href="./showHoroscope.php?horoscopeName=Taurus">Taurus</a></div>
 				<div class="horoscopes"><a href="./showHoroscope.php?horoscopeName=Gemini">Gemini</a></div>
@@ -48,13 +48,25 @@
 				<div class="horoscopes"><a href="./showHoroscope.php?horoscopeName=Aquarius">Aquarius</a></div>
 				<div class="horoscopes"><a href="./showHoroscope.php?horoscopeName=Pisces">Pisces</a></div>
 
-			</div> <!-- end of horoscopes -->
+			</div> --> <!-- end of horoscopes -->
 			<div id="wrap">
 				<div id="main-content">
-					<h2>Let's get your journey started!</h2>
-					<p>Lorem ipsum dot si amet <a href="#">link</a></p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2>Selected Horoscope details</h2>
+					<?php
+					// Check for variable
+					 if(!isset($_GET['horoscopeName']))
+						{
+							header('location: ./index.html');
+							exit();
+						}
+
+						$selectedHoroscope = $_GET['horoscopeName'];
+						
+						// Add sql query
+						// where horoscopeName = '$selectedHoroscope';
+						// if rows 0 header index.html
+						// else echo horoscope details
+					?>
 				</div> <!-- end of main-content -->
 				<div id="main-sidebar">
 					<h2>Weekly Email Update</h2>

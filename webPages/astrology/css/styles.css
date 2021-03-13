@@ -130,6 +130,13 @@ body {
 	font-size: 13px;
 }
 
+#wrap {
+	width: 100%;
+	display: grid;
+	grid-template-columns:70% 29%;
+	grid-gap: 1%;
+}
+
 #main-content {
 	margin-top: 150px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -138,7 +145,20 @@ body {
 	min-height: 400px;
 	margin-bottom: 20px;
 	padding: 10px;
+	display: grid;
 }
+
+#main-sidebar {
+	margin-top: 150px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 3px solid;
+	border-color: rgba(255, 255, 255, 0.1);
+	min-height: 400px;
+	margin-bottom: 20px;
+	padding: 10px;
+	display: grid;
+}
+
 
 #main-content h2 {
 	color: #f1f1f1;
@@ -157,6 +177,44 @@ body {
 	outline: none;
 	border: none;
 }
+
+#main-sidebar h2 {
+	color: #f1f1f1;
+	margin-top: 25px;
+}
+
+#main-sidebar p {
+	color: #d8d8d8;
+	margin-top: 10px;
+}
+
+#main-sidebar a {
+	color: #00008b;
+	margin-top: 10px;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+.email {
+	width: 98%;
+	outline: none;
+	border: none;
+	height: 30px;
+	border-width: 1%;
+	border-color: #000;
+	border-style: solid;
+}
+
+.subscribe {
+	width: 100%;
+	outline: none;
+	border: none;
+	height: 40px;
+	background-color: #000;
+	color: #fff;
+}
+
 
 #footer {
 	height: 30px;
@@ -182,6 +240,12 @@ body {
 	#horoscopes {
 		margin-top: 120px;
 		grid-template-columns:repeat(4,1fr);
+	}
+	#wrap {
+		grid-template-columns:repeat(1,1fr);
+	}
+	#main-sidebar {
+		margin-top: 10px;
 	}
 }
 
@@ -209,6 +273,7 @@ body {
 	
 	.fa-bars {
 		float: right;
+		padding-left: 10px;
 	}
 	
 	#nav img {
@@ -226,6 +291,7 @@ body {
 		background-color: rgba(0, 0, 0, 0.4);
 		height: 40px;
 		padding-top: 20px;
+		text-align: right;
 	}
 	
 	.burger-icon:hover {
