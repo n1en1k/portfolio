@@ -22,8 +22,7 @@ function showC() {
   } else {
     x.style.display = "block";
   }
-} 
-
+}
 
 </script>
 <style type="text/css">
