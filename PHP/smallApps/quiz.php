@@ -37,7 +37,7 @@ else {
 
 // Functions
 function printForm($i, $max, $questionArray) {
-    echo "<h2>Math quiz</h3>";
+    echo "<h2>Math quiz</h2>";
     echo "<form action='quiz.php' method='post'>";
     while ($i <= $max) {
         echo "<p><label for='question$i'>";
