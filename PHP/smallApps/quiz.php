@@ -9,15 +9,17 @@ $questionArray = [
     "q3" => "Calculate three plus two"
 ];
 
+// Answers (l as letter answer and n as numeric answer)
 $answerArray = [
-    "a1" => "four",
-    "a2" => "two",
-    "a3" => "five",
-    "a11" => "4",
-    "a22" => "2",
-    "a33" => "5"
+    "la1" => "four",
+    "la2" => "two",
+    "la3" => "five",
+    "na1" => "4",
+    "na2" => "2",
+    "na3" => "5"
 ];
 
+// values for while and for loops ($i = 1 loop start, $max = how many times run as how many questions there are, $points = 0 as a default value)
 $i = 1;
 $max = 3;
 $points = 0;
@@ -52,27 +54,27 @@ function printForm($i, $max, $questionArray) {
 function showScore($u, $max, $answerArray, $points, $questionArray, $userAnswerArray) {
     while ($u <= $max) {
         // Check for right answer (in letters)
-        if(($answerArray["a$u"]) == ($userAnswerArray["ua$u"]))
+        if(($answerArray["la$u"]) == ($userAnswerArray["ua$u"]))
         {
             $points++;
             echo "<p>$u. question was: <b>";
             echo $questionArray["q$u"];
             echo "</b> - and you answered: <b style='color: green;'>".$userAnswerArray["ua$u"]."</b> - the correct answer is <b style='color: green;'>";
-            echo $answerArray["a$u"];
+            echo $answerArray["na$u"];
             echo "</b> or <b style='color: green;'>";
-            echo $answerArray["a$u$u"];
+            echo $answerArray["la$u"];
             echo "</b></p>";
         }
         // Check for right answer (in numeric)
-        elseif(($answerArray["a$u$u"]) == ($userAnswerArray["ua$u"]))
+        elseif(($answerArray["na$u"]) == ($userAnswerArray["ua$u"]))
         {
             $points++;
             echo "<p>$u. question was: <b>";
             echo $questionArray["q$u"];
             echo "</b> - and you answered: <b style='color: green;'>".$userAnswerArray["ua$u"]."</b> - the correct answer is <b style='color: green;'>";
-            echo $answerArray["a$u"];
+            echo $answerArray["na$u"];
             echo "</b> or <b style='color: green;'>";
-            echo $answerArray["a$u$u"];
+            echo $answerArray["la$u"];
             echo "</b></p>";
         }
         // Wrong answer
@@ -81,9 +83,9 @@ function showScore($u, $max, $answerArray, $points, $questionArray, $userAnswerA
             echo "<p>$u. question was: <b>";
             echo $questionArray["q$u"];
             echo "</b> - and you answered: <b style='color: red;'>".$userAnswerArray["ua$u"]."</b> - the correct answer is <b style='color: red;'>";
-            echo $answerArray["a$u"];
+            echo $answerArray["na$u"];
             echo "</b> or <b style='color: red;'>";
-            echo $answerArray["a$u$u"];
+            echo $answerArray["la$u"];
             echo "</b></p>";
         }
         $u++;
@@ -95,7 +97,7 @@ function showScore($u, $max, $answerArray, $points, $questionArray, $userAnswerA
 function getData($i, $max) {
                 // Get data from sent form
                 for($p = $i; $p <= $max; $p++) {
-                    ${"userAnswer$p"} = htmlspecialchars($_POST["question$p"]);
+                    ${"userAnswer$p"} = strtolower(trim(htmlspecialchars($_POST["question$p"])));
                     $userAnswerArray["ua$p"] = ${"userAnswer$p"};
                 }
                 return $userAnswerArray;
