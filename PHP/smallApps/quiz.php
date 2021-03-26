@@ -23,8 +23,11 @@ $max = 3;
 $points = 0;
 
 // If user has already answered the questions, show results
-if(isset($_GET['submit']) && !empty($_GET['submit'])) {
-    showScore($i, $max, $answerArray, $points, $questionArray);
+if(isset($_POST['submit']) && !empty($_POST['submit'])) {
+    // Get answers from sent form
+    $userAnswerArray = getData($i, $max);
+    // Show results
+    showScore($i, $max, $answerArray, $points, $questionArray, $userAnswerArray);
 }
 
 // First visit, show questions
@@ -35,7 +38,7 @@ else {
 // Functions
 function printForm($i, $max, $questionArray) {
     echo "<h2>Please use letters only, e.g. one</h3>";
-    echo "<form action='quiz.php' method='get'>";
+    echo "<form action='quiz.php' method='post'>";
     while ($i <= $max) {
         echo "<p><label for='question$i'>";
         echo $questionArray["q$i"];
@@ -46,35 +49,38 @@ function printForm($i, $max, $questionArray) {
     echo "<p><input type='submit' name='submit' id='submit' value='submit' /> <input type='reset' name='reset' id='reset' value='reset' /></p></form>";
 }
 
-function showScore($u, $max, $answerArray, $points, $questionArray) {
+function showScore($u, $max, $answerArray, $points, $questionArray, $userAnswerArray) {
     while ($u <= $max) {
-        if(($answerArray["a$u"]) == ($_GET["question$u"]))
+        // Check for right answer (in letters)
+        if(($answerArray["a$u"]) == ($userAnswerArray["ua$u"]))
         {
             $points++;
             echo "<p>$u. question was: <b>";
             echo $questionArray["q$u"];
-            echo "</b> - and you answered: <b style='color: green;'>".$_GET["question$u"]."</b> - the correct answer is <b style='color: green;'>";
+            echo "</b> - and you answered: <b style='color: green;'>".$userAnswerArray["ua$u"]."</b> - the correct answer is <b style='color: green;'>";
             echo $answerArray["a$u"];
             echo "</b> or <b style='color: green;'>";
             echo $answerArray["a$u$u"];
             echo "</b></p>";
         }
-        elseif(($answerArray["a$u$u"]) == ($_GET["question$u"]))
+        // Check for right answer (in numeric)
+        elseif(($answerArray["a$u$u"]) == ($userAnswerArray["ua$u"]))
         {
             $points++;
             echo "<p>$u. question was: <b>";
             echo $questionArray["q$u"];
-            echo "</b> - and you answered: <b style='color: green;'>".$_GET["question$u"]."</b> - the correct answer is <b style='color: green;'>";
+            echo "</b> - and you answered: <b style='color: green;'>".$userAnswerArray["ua$u"]."</b> - the correct answer is <b style='color: green;'>";
             echo $answerArray["a$u"];
             echo "</b> or <b style='color: green;'>";
             echo $answerArray["a$u$u"];
             echo "</b></p>";
         }
+        // Wrong answer
         else
         {
             echo "<p>$u. question was: <b>";
             echo $questionArray["q$u"];
-            echo "</b> - and you answered: <b style='color: red;'>".$_GET["question$u"]."</b> - the correct answer is <b style='color: red;'>";
+            echo "</b> - and you answered: <b style='color: red;'>".$userAnswerArray["ua$u"]."</b> - the correct answer is <b style='color: red;'>";
             echo $answerArray["a$u"];
             echo "</b> or <b style='color: red;'>";
             echo $answerArray["a$u$u"];
@@ -82,6 +88,16 @@ function showScore($u, $max, $answerArray, $points, $questionArray) {
         }
         $u++;
     } 
-    echo "You got $points / $max points!";
+    echo "<h2>You got $points / $max points!</h2>";
+    echo "<h2><a style='text-decoration: none; color: blue;' href='quiz.php'>Do It Again</a></h2>";
+}
+
+function getData($i, $max) {
+                // Get data from sent form
+                for($p = $i; $p <= $max; $p++) {
+                    ${"userAnswer$p"} = htmlspecialchars($_POST["question$p"]);
+                    $userAnswerArray["ua$p"] = ${"userAnswer$p"};
+                }
+                return $userAnswerArray;
 }
 ?>
