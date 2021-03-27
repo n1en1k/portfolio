@@ -95,11 +95,11 @@ function showScore($u, $max, $answerArray, $points, $questionArray, $userAnswerA
 }
 
 function getData($i, $max) {
-                // Get data from sent form
-                for($p = $i; $p <= $max; $p++) {
-                    ${"userAnswer$p"} = strtolower(trim(htmlspecialchars($_POST["question$p"])));
-                    $userAnswerArray["ua$p"] = ${"userAnswer$p"};
-                }
-                return $userAnswerArray;
+    // Get data from sent form
+    for($p = $i; $p <= $max; $p++) {
+        ${"userAnswer$p"} = strtolower(trim(htmlspecialchars($_POST["question$p"])));
+        $userAnswerArray["ua$p"] = ${"userAnswer$p"};
+    }
+    return $userAnswerArray;
 }
 ?>
