@@ -41,20 +41,20 @@ echo "<h2>The Host has opened one door for you and it is door number $opened and
 <?php
 
 if($opened == 1) {
-echo "<td><img src='./images/donkey.gif' alt='doorone-open' /></td>
-<td><img src='./images/doortwo.gif' alt='doortwo' /></td>
-<td><img src='./images/doorthree.gif' alt='doorthree' /></td>";
+echo "<td><img src='./images/goat.png' alt='doorone-open' /></td>
+<td><img src='./images/doorTwo.png' alt='doortwo' /></td>
+<td><img src='./images/doorThree.png' alt='doorthree' /></td>";
 }
 
 elseif($opened == 2) {
-echo "<td><img src='./images/doorone.gif' alt='doorone' /></td>
-<td><img src='./images/donkey.gif' alt='doortwo-open' /></td>
-<td><img src='./images/doorthree.gif' alt='doorthree' /></td>";
+echo "<td><img src='./images/doorOne.png' alt='doorone' /></td>
+<td><img src='./images/goat.png' alt='doortwo-open' /></td>
+<td><img src='./images/doorThree.png' alt='doorthree' /></td>";
 }
 elseif($opened == 3) {
-echo "<td><img src='./images/doorone.gif' alt='doorone' /></td>
-<td><img src='./images/doortwo.gif' alt='doortwo' /></td>
-<td><img src='./images/donkey.gif' alt='doorthree-open' /></td>";
+echo "<td><img src='./images/doorOne.png' alt='doorone' /></td>
+<td><img src='./images/doorTwo.png' alt='doortwo' /></td>
+<td><img src='./images/goat.png' alt='doorthree-open' /></td>";
 }
 
 
