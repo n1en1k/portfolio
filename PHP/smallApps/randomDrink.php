@@ -119,7 +119,7 @@
 	function firstVisit() {
 		//ECHO TITLE AND ROLL LINK
 			echo "<h2>ROLL NEXT 3 DRINKS BETWEEN A COCKTAIL AND A BEER</h2>";
-			echo "<a href='./randomdrink.php?roll=ok'><h4>ROLL</h4></a>";
+			echo "<a href='./randomDrink.php?roll=ok'><h4>ROLL</h4></a>";
 	} // END OF FUNCTION firstVisit
 
 	function roll() {
@@ -139,9 +139,9 @@
 			}
 			
 		// ECHO LINKS
-			echo "<a href='./randomdrink.php'><h5 class='link first'>START</h5></a>";
-			echo "<a href='./randomdrink.php?roll=ok'><h5 class='link'>REROLL</h5></a>";
-			echo "<a href='./randomdrink.php?roll=code'><h5 class='link'>SHOW CODE</h5></a>";
+			echo "<a href='./randomDrink.php'><h5 class='link first'>START</h5></a>";
+			echo "<a href='./randomDrink.php?roll=ok'><h5 class='link'>REROLL</h5></a>";
+			echo "<a href='./randomDrink.php?roll=code'><h5 class='link'>SHOW CODE</h5></a>";
 	} // END OF FUNCTION ROLL
 
 	function randDrink($valueone, $valuetwo, $num){
@@ -153,9 +153,9 @@
 	
 	function showCode() {
 		// SHOWS CODE
-			highlight_file('./randomdrink.php');
+			highlight_file('./randomDrink.php');
 		// ECHO LINKS
-			echo "<a href='./randomdrink.php'><h5 class='link first'>START</h5></a>";
-			echo "<a href='./randomdrink.php?roll=ok'><h5 class='link'>REROLL</h5></a>";
+			echo "<a href='./randomDrink.php'><h5 class='link first'>START</h5></a>";
+			echo "<a href='./randomDrink.php?roll=ok'><h5 class='link'>REROLL</h5></a>";
 	}
 ?>

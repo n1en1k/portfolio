@@ -37,7 +37,7 @@ body {
 	background-color: #aeaeae;
 }
 
-#keskus {
+#center {
 	width: 400px;
 	height: 400px;
 	margin: auto;
@@ -61,7 +61,7 @@ body {
 	font-size: 24px;
 }
 
-.painike {
+.buttonOne {
 	background-color: #333;
 	border: 1px solid #000;
 	width: 150px;
@@ -76,7 +76,7 @@ body {
 </style>
 </head>
 <body>
-<div id="keskus">
+<div id="center">
 <?php
 if (!isset($_POST['calc'])) {
 	
@@ -122,8 +122,8 @@ function printForm() {
 	<p style='display: none;' id='farru'>Fahrenheit:<br /><input type='text' name='fahren' id='fahren' maxlength='8' /></p><br />
 	<p style='display: none;' id='cellu'>Celcius:<br /><input type='text' name='celcius' id='celcius' maxlength='8' /></p><br />
 	
-	<input class='painike' type='submit' name='calc' value='calculate' />
-	<input class='painike' type='button' onclick='reset()' value='Reset form'>
+	<input class='buttonOne' type='submit' name='calc' value='calculate' />
+	<input class='buttonOne' type='button' onclick='reset()' value='Reset form'>
 	</form>";
 }
 
@@ -133,25 +133,25 @@ function fahrenheitToCelsius($f) {
 // °C = (°F − 32) / 1,8
 if ($f == "") {
 	$f = 0;
-echo "<p>Enter value!</p><p><a href='./ftoc.php'>Start</a></p>";
+echo "<p>Enter value!</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
 }
 else {
 $fa = $f - 32;
 $con = $fa / 1.8;
 $con = round($con,2);
- echo "<p>$f &deg;F = $con &deg;C</p><p><a href='./ftoc.php'>Start</a></p>";}
+ echo "<p>$f &deg;F = $con &deg;C</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";}
 }
 
 
 function celciusToFahrenheit($c) {
 // °F = (°C) · 1,8 + 32
 if ($c == "") {
-echo "<p>Enter value!</p><p><a href='./ftoc.php'>Start</a></p>";
+echo "<p>Enter value!</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
 }
 else {
 $con = $c * 1.8;
 $con = $con + 32;
 $con = round($con,2);
-echo "<p>$c &deg;C = $con &deg;F</p><p><a href='./ftoc.php'>Start</a></p>";}
+echo "<p>$c &deg;C = $con &deg;F</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";}
 }
 ?>

@@ -53,7 +53,7 @@ for ($i=0; $i<3; $i ++)
 	
 	
 	if($switched == $prize) {
-	echo "GZ! YOU WON BUY SWITCHING!";
+	echo "GZ! YOU WON BY SWITCHING!";
 	
 }
 
@@ -68,7 +68,7 @@ else {
 
 elseif($newSelect == 1) {
 	if($picked == $prize) {
-		echo "GZ! YOU WON BUY STICKING!";
+		echo "GZ! YOU WON BY STICKING!";
 	}
 	
 	else {
