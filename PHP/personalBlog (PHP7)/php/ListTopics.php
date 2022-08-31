@@ -1,0 +1,51 @@
+<?php
+session_start();
+/*if(!isset($_SESSION["id"])) {
+    header("location: index.php");
+}*/
+ require_once('config.php');
+// new
+
+// Attempt select query execution
+$sql = "SELECT id, title, blogpost, writer, DATE_FORMAT(timeof, '%H:%i, %d.%m.%Y') AS timeo FROM blogposts ORDER BY timeof DESC LIMIT 100;";
+if($result = mysqli_query($link, $sql)){
+    if(mysqli_num_rows($result) > 0){
+        while($row = mysqli_fetch_array($result)){
+            $id = $row['id']; 
+            $title = $row['title'];
+            $blogpost = $row['blogpost'];
+            $writer = $row['writer'];
+            $timeo = $row['timeo'];
+                                     
+            $title = htmlspecialchars($title);
+            $blogpost = htmlspecialchars($blogpost);
+            $writer = htmlspecialchars($writer);
+
+            $blogpost = nl2br($blogpost);
+
+            echo "
+                <div class='blogPost'>
+                    <div class='blogPostPic'>
+                        <img src='./images/avatar.png' alt='avatar' />
+                    </div> <!-- blogPostPic-->
+                    <div class='blogPostText'>
+                        <h2>{$title}</h2>
+                        <p>{$blogpost}</p>
+                        <p>{$writer} - {$timeo}</p>
+                        <hr />
+                    </div> <!-- blogPostText-->
+                </div> <!-- blogPost-->
+            ";
+
+        }
+
+        // Free result set
+        mysqli_free_result($result);
+    } else{
+        echo '<div class="alert alert-danger"><em>No records were found.</em></div>';
+    }
+} else{
+    echo "Oops! Something went wrong. Please try again later.";
+}
+ 
+?>
