@@ -43,7 +43,7 @@ $writer = htmlspecialchars($writer);
             header("location: index.php");
             exit();
         } else{
-            echo "Oops! Something went wrong. Please try again later.";
+            echo "Something went wrong. Please try again later.";
         }
     }
      

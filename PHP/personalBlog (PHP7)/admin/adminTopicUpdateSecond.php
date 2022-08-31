@@ -59,7 +59,7 @@ require_once('./config.php');
             }
             
         } else{
-            echo "Oops! Something went wrong. Please try again later.";
+            echo "Something went wrong. Please try again later.";
         }
     }
      

@@ -1,12 +1,7 @@
 <?php
-session_start();
-/*if(!isset($_SESSION["id"])) {
-    header("location: index.php");
-}*/
- require_once('config.php');
-// new
 
-// Attempt select query execution
+require_once('config.php');
+
 $sql = "SELECT id, title, blogpost, writer, DATE_FORMAT(timeof, '%H:%i, %d.%m.%Y') AS timeo FROM blogposts ORDER BY timeof DESC LIMIT 100;";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
@@ -39,13 +34,12 @@ if($result = mysqli_query($link, $sql)){
 
         }
 
-        // Free result set
         mysqli_free_result($result);
     } else{
-        echo '<div class="alert alert-danger"><em>No records were found.</em></div>';
+        echo '<div class="alert alert-danger"><em>No records found.</em></div>';
     }
 } else{
-    echo "Oops! Something went wrong. Please try again later.";
+    echo "Something went wrong. Please try again later.";
 }
  
 ?>
