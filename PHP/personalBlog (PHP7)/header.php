@@ -1,3 +1,8 @@
+<?php
+	if(!isset($pageTitle)) {
+		$pageTitle = "Personal Blog - Home Page";
+	}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
 <head>
@@ -27,6 +32,7 @@
 			<h2>Welcome to my blog!</h2>
 		</div> <!-- bannerText-->
 	</div> <!-- banner-->
-	<!--<div class="main-wrapper">
+	<!-- ready layout for a sidebar
+	<div class="main-wrapper">
 	<div class="wrapper"> -->
 	<div class="content">

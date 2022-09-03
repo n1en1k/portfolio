@@ -1,8 +1,10 @@
 </div> <!-- content-->
-	<!-- <div class="sidebar">
-		ö
+	<!-- ready layout for a sidebar
+	<div class="sidebar">
+		sidebar content
 	</div> -->
-<!-- </div> wrapper
+<!--
+</div> wrapper
 </div>  main wrapper-->
 	<div class="footerwrap">
 		<div class="footer">
