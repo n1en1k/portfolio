@@ -1,6 +1,6 @@
 #diceRoll.py
 import random
-def dicePrint(roll):
+def dice_print(roll):
     if roll == 1:
         print(" _______ ")
         print("|       |")
@@ -55,8 +55,8 @@ while another_roll == "yes":
     print("and the values are:")
     dice_one = random.randint(min, max)
     dice_two = random.randint(min, max)
-    dicePrint(dice_one)
-    dicePrint(dice_two)
+    dice_print(dice_one)
+    dice_print(dice_two)
     another_roll = input("Roll the dices again (yes/no)? ")
 
 if another_roll == "no":
