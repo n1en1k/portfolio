@@ -1,4 +1,4 @@
-function validate(){
+function validateForm(){
     var name = document.getElementById("name").value;
     var subject = document.getElementById("subject").value;
     var phone = document.getElementById("phone").value;
@@ -14,26 +14,28 @@ function validate(){
       errMsg.innerHTML = text;
       return false;
     }
-    if(subject.length < 5){
+    else if(subject.length < 5){
       text = "Check subject";
       errMsg.innerHTML = text;
       return false;
     }
-    if(isNaN(phone) || phone.length != 10){
+    else if(isNaN(phone) || phone.length != 10){
       text = "Check phone number";
       errMsg.innerHTML = text;
       return false;
     }
-    if(email.indexOf("@") == -1 || email.length < 6){
+    else if(email.indexOf("@") == -1 || email.length < 6){
       text = "Check email";
       errMsg.innerHTML = text;
       return false;
     }
-    if(message.length <= 20){
+    else if(message.length <= 20){
       text = "Write at least 20 characters";
       errMsg.innerHTML = text;
       return false;
     }
-    alert("Form Submitted!");
-    return true;
+    else {
+      return true;
+    }
+
   }

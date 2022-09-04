@@ -10,24 +10,24 @@
     <div id="errMsg">
        
     </div>
-    <form method="post" action="#" id="myform" onsubmit = "return validate();">
+    <form action="./php/sendForm.php" id="myForm" onsubmit="return validateForm();" method="get">
       <div class="inputField">
-          <input type="text" placeholder="Name" id="name" />
+          <input type="text" placeholder="Name" id="name" name="name" />
       </div>
       <div class="inputField">
-          <input type="text" placeholder="Subject" id="subject" />
+          <input type="text" placeholder="Subject" id="subject" name="subject" />
       </div>
       <div class="inputField">
-          <input type="text" placeholder="Phone" id="phone" />
+          <input type="text" placeholder="Phone" id="phone" name="phone" />
       </div>
       <div class="inputField">
-          <input type="text" placeholder="Email" id="email" />
+          <input type="text" placeholder="Email" id="email" name="email" />
       </div>
       <div class="inputField">
-          <textarea placeholder="Message" id="message"></textarea>
+          <textarea placeholder="Message" id="message" name="message"></textarea>
       </div>
       <div class="btn">
-          <input type="submit" value="Send" />
+          <input type="submit" name="submit" id="submit" value="Send" />
       </div>
     </form>
   </div>

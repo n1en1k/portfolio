@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+<head>
+	<title>Yhteydenotto</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="./javascripts.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+            <div class="yhteydenottoPage">
+                <h1>Ota yhteyttä</h1>
+                <form action="./php/sendForm.php" name="yhteydenotto" onsubmit="return validateForm();" method="get">
+                    <p><input type="text" class="tekstikentta" placeholder="nimi:" name="nimi" id="nimi" /></p>
+                    <p><input type="tel" class="tekstikentta" placeholder="puhelin:" name="puhelin" id="puhelin" /></p>
+                    <p><input type="email" class="tekstikentta" placeholder="email:" name="email" id="email" /></p>
+                    <p><textarea placeholder="viesti:" name="viesti" id="viesti" rows="4" cols="50"></textarea></p>
+                    <p><input type="text" class="tekstikentta" placeholder="Montako sivua on kolmiossa? (e.g. 2)" name="secure" id="secure" /></p>
+                    <p><input type="submit" name="submit" id ="submit" value="Lähetä" /></p>
+                </form>
+            </div> <!-- yhteydenottoPage -->
+</body>
+</html>
