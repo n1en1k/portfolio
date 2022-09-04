@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#fff;
+}
+
+.images {
+    background: #fff;
+    flex: 0 0 80%;
+    min-height: 70vh;
+    background: url('./img/img0.jpg')center/cover no-repeat;
+    border-radius: 10px;
+    position: relative;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: black;
+    border: 2px solid #000;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    outline: none;
+    font-size: 18px;
+    transition: ease-in-out 0.5s;
+}
+
+.prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.btn:hover {
+    background: #ddd;
+    cursor: pointer;
+}
