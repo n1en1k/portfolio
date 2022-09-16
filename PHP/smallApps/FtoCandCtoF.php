@@ -76,43 +76,40 @@ body {
 </style>
 </head>
 <body>
-<div id="center">
-<?php
-if (!isset($_POST['calc'])) {
+	<div id="center">
+	<?php
+		if (!isset($_POST['calc'])) {
 	
 			// FUNCTION CALL
-				printForm();
-				exit();
+			printForm();
+			exit();
 		}
 		elseif ($_POST['laji'] == "0") {
 			// FUNCTION CALL
-				$fah = htmlspecialchars($_POST['fahren']);
-				$fah = trim($fah);
-				fahrenheitToCelsius($fah);
-				exit();
-	}
+			$fah = htmlspecialchars($_POST['fahren']);
+			$fah = trim($fah);
+			fahrenheitToCelsius($fah);
+			exit();
+		}
 		
 		elseif ($_POST['laji'] == "1") {
 			// FUNCTION CALL
 			$cel = htmlspecialchars($_POST['celcius']);
 			$cel = trim($cel);
 			celciusToFahrenheit($cel);
-				exit();
-	}
-?>
-</div>
+			exit();
+		}
+	?>
+	</div>
 </body>
 </html>
 
 
 <?php
 
-
-
 //fahrenheitToCelsius($fah);
 
 //celciusToFahrenheit($cel);
-
 
 function printForm() {
 	echo "<form action='#' name='temp' method='post'>
@@ -130,28 +127,30 @@ function printForm() {
 
 
 function fahrenheitToCelsius($f) {
-// °C = (°F − 32) / 1,8
-if ($f == "") {
-	$f = 0;
-echo "<p>Enter value!</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
-}
-else {
-$fa = $f - 32;
-$con = $fa / 1.8;
-$con = round($con,2);
- echo "<p>$f &deg;F = $con &deg;C</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";}
+	// °C = (°F − 32) / 1,8
+	if ($f == "") {
+		$f = 0;
+		echo "<p>Enter value!</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
+	}
+	else {
+		$fa = $f - 32;
+		$con = $fa / 1.8;
+		$con = round($con,2);
+		echo "<p>$f &deg;F = $con &deg;C</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
+	}
 }
 
 
 function celciusToFahrenheit($c) {
-// °F = (°C) · 1,8 + 32
-if ($c == "") {
-echo "<p>Enter value!</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
-}
-else {
-$con = $c * 1.8;
-$con = $con + 32;
-$con = round($con,2);
-echo "<p>$c &deg;C = $con &deg;F</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";}
+	// °F = (°C) · 1,8 + 32
+	if ($c == "") {
+		echo "<p>Enter value!</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
+	}
+	else {
+		$con = $c * 1.8;
+		$con = $con + 32;
+		$con = round($con,2);
+		echo "<p>$c &deg;C = $con &deg;F</p><p><a href='./FtoCandCtoF.php'>Start</a></p>";
+	}
 }
 ?>
