@@ -14,8 +14,6 @@ but I have the same images here, on webPages directory.\
 ![My Image](portfolioImages/rinopizza.jpg)
 ![My Image](portfolioImages/rinopizzasimple.jpg)
 ![My Image](portfolioImages/ydNewLayout1.jpg)
-![My Image](portfolioImages/ydNewLayoutMobile.jpg)
-I don't want to share their code, so instead I have two other web layouts for that (to check structures and how I comment stuff etc).\
-\
+![My Image](portfolioImages/ydNewLayoutMobile.jpg)\
 If you wish to see how I used the codeblog layout in practice, please check it in here:\
 https://github.com/n1en1k/portfolio/tree/master/PHP/personalBlog%20(PHP7)
