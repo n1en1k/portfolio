@@ -1,4 +1,22 @@
-Welcome to my portfolio!
+<div id="header" align="center">
+  <img src="https://lankamaa.fi/niko/images/face.png" width="100"/>
+</div>
+
+<div id="badges">
+  <a href="https://www.linkedin.com/in/n1en1k">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://www.instagram.com/n1en1k/">
+    <img src="https://img.shields.io/badge/Instagram-red?style=for-the-badge&logo=instagram&logoColor=white" alt="Youtube Badge"/>
+  </a>
+  <a href="https://twitter.com/n1en1k">
+    <img src="https://img.shields.io/badge/X-black?style=for-the-badge&logo=x&logoColor=white" alt="Twitter Badge"/>
+  </a>
+</div>
+
+<img src="https://komarev.com/ghpvc/?username=n1en1k&style=flat-square&color=blue&base=100" alt=""/>
+
+<h1>Welcome to my portfolio!</h1>
 
 Here I have some examples of my coding.
 
