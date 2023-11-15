@@ -17,7 +17,7 @@
 
 ---
 
-### :man_technologist: About Me:
+### :man_technologist: About Me :
 
 I am a Multitalent of Information Technology from Finland.
 
@@ -32,7 +32,7 @@ I am a Multitalent of Information Technology from Finland.
 
 ---
 
-### :hammer_and_wrench: Languages and Tools:
+### :hammer_and_wrench: Languages and Tools :
 
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
