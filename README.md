@@ -9,6 +9,13 @@
 
 <h1>Welcome to my portfolio!</h1>
 </div>
+
+<div align="center">
+  <img src="https://lankamaa.fi/niko/imgs/valokuvat-12-thumb.jpg" width="600" />
+</div>
+
+
+
 Here I have some examples of my coding.
 
 Web Design portfolio is easier to check on:
