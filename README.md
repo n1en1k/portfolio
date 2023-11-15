@@ -18,11 +18,11 @@
 
 ### :man_technologist: About Me:
 
-- I am a hardworking, long-term and reliable employee. I work accurately and quickly without compromising on quality.
+- :person_in_tuxedo: I am a hardworking, long-term and reliable employee. I work accurately and quickly without compromising on quality.
 
-- I am interested in computer & peripheral repairs and sales, IT-support and full stack web development (LAMP stack [Linux, Apache, MySQL, PHP], HTML and CSS on junior level and JavaScript on beginner level). I also like Python. I'm currently learning MERN stack and Laravel.
+- :desktop_computer: I am interested in computer & peripheral repairs and sales, IT-support and full stack web development (LAMP stack [Linux, Apache, MySQL, PHP], HTML and CSS on junior level and JavaScript on beginner level). I also like Python. I'm currently learning MERN stack and Laravel.
 
-- In my spare time I listen operas, play the guitar and cook BBQ. I also enjoy photography.
+- :camera: In my spare time I listen operas, play the guitar and cook BBQ. I also enjoy photography.
 
 
 
