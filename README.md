@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <img src="https://lankamaa.fi/niko/images/face.png" width="100"/>
+  <img src="https://lankamaa.fi/niko/images/face.png" width="150"/>
 <div id="badges">
   <a href="https://www.linkedin.com/in/n1en1k"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/></a>
   <a href="https://www.instagram.com/n1en1k/"><img src="https://img.shields.io/badge/Instagram-red?style=for-the-badge&logo=instagram&logoColor=white" alt="Youtube Badge"/></a>
@@ -18,13 +18,15 @@
 
 ### :man_technologist: About Me:
 
+I am a Multitalent of Information Technology from Finland.
+
 - :person_in_tuxedo: I am a hardworking, long-term and reliable employee. I work accurately and quickly without compromising on quality.
 
 - :desktop_computer: I am interested in computer & peripheral repairs and sales, IT-support and full stack web development (LAMP stack [Linux, Apache, MySQL, PHP], HTML and CSS on junior level and JavaScript on beginner level). I also like Python. I'm currently learning MERN stack and Laravel.
 
 - :camera: In my spare time I listen operas, play the guitar and cook BBQ. I also enjoy photography.
 
-
+- :email: How to contact me: [![Linkedin Badge](https://img.shields.io/badge/-n1en1k-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/n1en1k)
 
 
 
