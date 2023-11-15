@@ -26,10 +26,10 @@ I am a Multitalent of Information Technology from Finland.
 
 - :camera: In my spare time I listen operas, play the guitar and cook BBQ. I also enjoy photography.
 
-- :email: How to contact me: [![Linkedin Badge](https://img.shields.io/badge/-n1en1k-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/n1en1k)
+- :email: How to contact me: [![Linkedin Badge](https://img.shields.io/badge/-n1en1k-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/n1en1k) [![Website Badge](https://img.shields.io/badge/-webportfolio-green?style=flat&logo=Linkedin&logoColor=white)](https://lankamaa.fi/niko/#yhteydenotto)
 
 
-
+  
 
 
 Here I have some examples of my coding.
