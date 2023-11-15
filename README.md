@@ -14,6 +14,7 @@
   <img src="https://lankamaa.fi/niko/imgs/valokuvat-12-thumb.jpg" width="600" height="300" />
 </div>
 
+
 ---
 
 ### :man_technologist: About Me:
@@ -26,17 +27,28 @@ I am a Multitalent of Information Technology from Finland.
 
 - :camera: In my spare time I listen operas, play the guitar and cook BBQ. I also enjoy photography.
 
-- :email: How to contact me: [![Linkedin Badge](https://img.shields.io/badge/-n1en1k-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/n1en1k) [![Website Badge](https://img.shields.io/badge/-webportfolio-green?style=flat&logo=Linkedin&logoColor=white)](https://lankamaa.fi/niko/#yhteydenotto)
+- :email: How to contact me: [![Linkedin Badge](https://img.shields.io/badge/-n1en1k-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/n1en1k) [![Website Badge](https://img.shields.io/badge/-WebPortfolio-green?style=flat&logoColor=white)](https://lankamaa.fi/niko/#yhteydenotto)
 
 
+---
+
+### :hammer_and_wrench: Languages and Tools:
   
 
 
-Here I have some examples of my coding.
+---
 
-Web Design portfolio is easier to check on:
-www.lankamaa.fi/niko
-but I have the same images here, on webPages directory.
-I don't want to share their code, so instead I have two other web layouts for that (to check structures and how I comment stuff etc).
+### :fire: My Stats:
 
-Please check my other public repos as well!
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=n1en1k&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
+
+
+---
+
+### :fire: This Repo:
+
+- Here I have some examples of my coding.
+
+- Check my full Web Portfolio on: [![Website Badge](https://img.shields.io/badge/-WebPortfolio-green?style=flat&logoColor=white)](https://lankamaa.fi/niko/)
+
+- Please check my other public repos as well!
