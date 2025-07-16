@@ -14,7 +14,6 @@
   <img src="https://lankamaa.fi/niko/imgs/valokuvat-12-thumb.jpg" width="600" height="300" />
 </div>
 
-
 ---
 
 ### :man_technologist: About Me:
@@ -28,7 +27,6 @@ I am a Multitalent of Information Technology from Finland.
 - :camera: In my spare time I listen operas, play the guitar and cook BBQ. I also enjoy photography.
 
 - :email: How to contact me: [![Linkedin Badge](https://img.shields.io/badge/-n1en1k-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/n1en1k) [![Website Badge](https://img.shields.io/badge/-WebPortfolio-green?style=flat&logoColor=white)](https://lankamaa.fi/niko/#yhteydenotto)
-
 
 ---
 
@@ -53,7 +51,6 @@ I am a Multitalent of Information Technology from Finland.
   <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="40" height="40"/>
 </div>
 
-
 ---
 
 ### :fire: My Stats:
@@ -61,7 +58,6 @@ I am a Multitalent of Information Technology from Finland.
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=n1en1k&theme=dark&background=000000)](https://git.io/streak-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=n1en1k&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
-
 
 ---
 
